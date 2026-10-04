@@ -1,6 +1,6 @@
 # Autonomous UWB Drone Swarm
 
-A fully custom, low-level embedded hardware and firmware platform designed for autonomous multi-agent drone swarms. The system integrates custom STM32-based flight controller PCBs, coreless DC motor drive arrays for a micro quadcopter form factor, Ultra-Wideband (UWB) 3D spatial localization, and custom control stacks built entirely from first principles—bypassing off-the-shelf flight controllers and third-party firmware stacks like PX4 or Betaflight.
+A fully custom, low-level embedded hardware and firmware platform designed for autonomous multi drone swarms. The system integrates custom STM32-based flight controller PCBs, coreless DC motor drive arrays for a micro quadcopter form factor, Ultra-Wideband (UWB) 3D spatial localization, and custom control stacks built entirely from first principles—bypassing off-the-shelf flight controllers and third-party firmware stacks like PX4 or Betaflight.
 
 ---
 ## Grand Objectives
@@ -24,7 +24,7 @@ Detailed engineering decisions and specifications are broken down in the `docs/`
 * **/hardware** - KiCad/Altium schematic captures and PCB layout files.
 * **/firmware** - STM32 C/C++ application logic (CMake/Ninja toolchain).
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
 This project follows a structured hardware-software co-design lifecycle, progressing from systems engineering and hardware fabrication to low-level control, state estimation, and multi-agent coordination:
 
