@@ -28,6 +28,7 @@ The purpose of this project is to design, manufacture, and program an autonomous
 * **[REQ-HW-03] Onboard Power Regulation:** The power distribution network shall regulate a stable **3.3V power rail** ($\pm 2\%$) for logic, state estimation sensing, and RF transceivers across the entire battery discharge curve.
 * **[REQ-HW-04] EMI & Motor Noise Handling:** Motor drive channels shall incorporate hardware suppression (Schottky flyback diodes and decoupling bulk capacitance) to isolate inductive switching noise from sensor and digital logic buses.
 * **[REQ-HW-05] Physical Dimensions:** Drone frame will not exceed 110mm and drone props will not exceed 70mm to meet space constraints. PCB dimensions will not exceed 45mm X 45mm
+* [REQ-HW-06] Current draw:** To maximise battery life, components should attempt to minimise current draw
 ---
 
 ## 4. Compute & Software Performance
@@ -36,6 +37,7 @@ The purpose of this project is to design, manufacture, and program an autonomous
 * **[REQ-SW-02] Processing Core Acceleration:** The onboard microcontroller shall feature an ARM Cortex-M architecture with hardware Floating Point Unit (FPU) operating at a minimum clock frequency of **100 MHz**.
 * **[REQ-SW-03] Spatial Positioning Rate:** The Extended Kalman Filter (EKF) shall incorporate UWB position updates at a minimum refresh rate of **20 Hz** with static positioning accuracy within **±10 cm**.
 * **[REQ-SW-04] Telemetry Transmission:** System state telemetry (attitude, battery voltage, position, system status) shall transmit over a wireless link at a selectable rate of **10 Hz to 50 Hz**.
+* **[REQ-SW-05] Alitude Estimation:** Altitude estimation will support indoor height holding with an error no greater than ($\pm 0.5\text{ m}$ precision).**.
 
 ---
 
