@@ -27,7 +27,7 @@ The purpose of this project is to design, manufacture, and program an autonomous
 * **[REQ-HW-02] Primary Power Source:** System power shall be supplied by a single-cell LiPo battery (1S, nominal voltage 3.7V, operational voltage 3.0V – 4.2V).
 * **[REQ-HW-03] Onboard Power Regulation:** The power distribution network shall regulate a stable **3.3V power rail** ($\pm 2\%$) for logic, state estimation sensing, and RF transceivers across the entire battery discharge curve.
 * **[REQ-HW-04] EMI & Motor Noise Handling:** Motor drive channels shall incorporate hardware suppression (Schottky flyback diodes and decoupling bulk capacitance) to isolate inductive switching noise from sensor and digital logic buses.
-* **[REQ-HW-05] Physical Dimensions:** Drone frame will not exceed 110mm and drone props will not exceed 70mm to meet space constraints. PCB dimensions will not exceed 40mm X 40mm
+* **[REQ-HW-05] Physical Dimensions:** Drone frame will not exceed 110mm and drone props will not exceed 70mm to meet space constraints. PCB dimensions will not exceed 45mm X 45mm
 ---
 
 ## 4. Compute & Software Performance
