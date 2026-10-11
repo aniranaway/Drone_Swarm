@@ -102,15 +102,22 @@
 <!------------------------------------------------------------------------------------------ -->
 ## 5. Time of Flight
 ### 5.1 Requirements Trace
-* `[REQ-SW-05]` Barometer will have an error no greater than ($\pm 0.5\text{ m}$ precision)
-* `[REQ-HW-06]` To maximise battery life, components should attempt to minimise current draw.
+- `[REQ-SW-05]` Time of Flight sensor shall provide distance measurements up to 4 meters with millimeter-to-centimeter level precision for altitude hold.
+- `[REQ-HW-06]` To maximise battery life, components should attempt to minimise current draw.
 
 ### 5.2 Candidate Comparison
+| Component | Max Range | Field of View (FOV) | Max I2C Speed | Accuracy | Max ODR | Voltage | Current Usage | Price (JLC CAD) | Stock |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **VL53L1X** | 4.0 m | 27° | 400 kHz | ± 5 mm | 50 Hz | 2.8V - 3.3V | ~19 mA (active) | $3.30 | 12601 |
+| **VL53L0X** | 1.2 - 2.0 m | 25° | 400 kHz | ± 3 mm | 50 Hz | 2.8V - 3.3V | ~20 mA (active) | $2.55 | 19685 |
+| **VL53L5CX** | 4.0 m | 63° x 63° (8x8 grid) | 1 MHz | ± 5 mm | 60 Hz | 2.8V - 3.3V | ~15 mA (low power) | $7.18 | 827 |
 
 ### 5.3 Technical Analysis & Takeaways
-
+The Vl53L5CX while being a stronger sensor overall, appears to be overkill for this project. Object collision avoidance and multi zonal tracking are the not key feature requirements and as such to balance complexity with performance, the VL53L0X or VL53L1X are far better choices
 ### 5.4 Final Verdict
+The **VL53L1X** is selected as the primary Time of Flight sensor due to its ideal 4-meter range, reliable precision, and general stock availability for SMT assembly.
 <!------------------------------------------------------------------------------------------ -->
+
 ## 6. Ultra Wide Band (UWB)
 ### 6.1 Requirements Trace
 
