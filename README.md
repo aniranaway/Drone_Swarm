@@ -15,7 +15,6 @@ A fully custom, low-level embedded hardware and firmware platform designed for a
 Detailed engineering decisions and specifications are broken down in the `docs/` directory:
 * [System Requirements Document (SRD)](docs/system_requirements.md)
 * [Component Selection Analysis](docs/component_selection_analysis.md)
-* [System Architecture & Block Diagrams](docs/architecture.md)
 * [Bill of Materials (BOM)](docs/bill_of_materials.md)
 
 ---
