@@ -30,31 +30,28 @@ This project follows a structured hardware-software co-design lifecycle, progres
 - [ ] **Phase 1: Requirements & Component Selection** *(In Progress)*  
   Establish System Requirements Documents (SRD), execute trade studies for core components (MCU, IMU, UWB, Power), and calculate mass/power budgets.
 
-- [ ] **Phase 2: Firmware & System Architecture Design**  
-  Define MCU pinouts, system block diagrams, task state transitions, and the firmware project structure.
-
-- [ ] **Phase 3: Schematic Capture & Circuit Design**  
+- [ ] **Phase 2: Schematic Capture & Circuit Design**  
   Design power regulation, coreless motor MOSFET drive arrays, RF layout rules for radio, SWD interfaces, sensor layouts, and dedicated test pads.
 
-- [ ] **Phase 4: PCB Layout, Manufacturing & Board Bring-Up**  
+- [ ] **Phase 3: PCB Layout, Manufacturing & Board Bring-Up**  
   Perform 4-layer PCB layout with impedance matching, manage fabrication/assembly, and execute board bring-up (power rail verification, current draw checks, and SWD flashing).
 
-- [ ] **Phase 5: Low-Level Drivers & Telemetry Baseline**  
+- [ ] **Phase 4: Low-Level Drivers & Telemetry Baseline**  
   Develop register-level/HAL SPI drivers for the IMU, I2C drivers for the barometer, PWM timer outputs for motor control, UART telemetry output, and status LED error handlers.
 
-- [ ] **Phase 6: Airframe Assembly & Hardware Integration**  
+- [ ] **Phase 5: Airframe Assembly & Hardware Integration**  
   Mount flight controllers to micro frames, wire motor connections, calibrate motor spin directions, and verify physical center of mass.
 
-- [ ] **Phase 7: Advanced State Estimation & Flight Control**  
+- [ ] **Phase 6: Advanced State Estimation & Flight Control**  
   Implement digital low-pass filtering, build a custom Extended Kalman Filter (EKF) pipeline for IMU/Baro/UWB fusion, write cascaded PID controllers, and perform tethered flight tuning.
 
-- [ ] **Phase 8: Swarm Simulation & Waypoint Planning**  
+- [ ] **Phase 7: Swarm Simulation & Waypoint Planning**  
   Develop simulation frameworks and Ground Control Station (GCS) telemetry interfaces to validate trajectory generation and collision avoidance prior to physical swarm deployment.
 
-- [ ] **Phase 9: UWB Infrastructure & Multi-Agent Setup**  
+- [ ] **Phase 8: UWB Infrastructure & Multi-Agent Setup**  
   Deploy and calibrate fixed indoor UWB anchors, assemble secondary flight hardware, and establish inter-node wireless communications.
 
-- [ ] **Phase 10: Swarm Coordination & Autonomous Flight**  
+- [ ] **Phase 9: Swarm Coordination & Autonomous Flight**  
   Execute decentralized/centralized swarm algorithms for coordinated formation flight, multi-agent pathing, and real-time telemetry tracking.
 
 ---
