@@ -38,7 +38,7 @@ The purpose of this project is to design, manufacture, and program an autonomous
 * **[REQ-SW-03] Spatial Positioning Rate:** The Extended Kalman Filter (EKF) shall incorporate UWB position updates at a minimum refresh rate of **20 Hz** with static positioning accuracy within **±10 cm**.
 * **[REQ-SW-04] Telemetry Transmission:** System state telemetry (attitude, battery voltage, position, system status) shall transmit over a wireless link at a selectable rate of **10 Hz to 50 Hz**.
 * **[REQ-SW-05] Alitude Estimation:** Altitude estimation will support indoor height holding with an error no greater than ($\pm 0.5\text{ m}$ precision).**.
-
+* **[REQ-SW-06] Blackbox Flightrecorder:** The system shall record high-frequency telemetry and sensor data (IMU rates, attitude estimates, control outputs, and system states) to non-volatile external flash memory for post-flight tuning and debugging analysis.
 ---
 
 ## 5. Subsystem & Data Interfaces

@@ -120,47 +120,122 @@ The **VL53L1X** is selected as the primary Time of Flight sensor due to its idea
 
 ## 6. Ultra Wide Band (UWB)
 ### 6.1 Requirements Trace
+### 6.1 Requirements Trace
+- `[REQ-SW-03]` The Extended Kalman Filter (EKF) shall incorporate UWB position updates at a minimum refresh rate of 20 Hz with static positioning accuracy within ±10 cm.
+- `[REQ-HW-01]` The fully assembled drone (including PCB, motors, frame, props, UWB transceiver, and battery) shall not exceed 40 grams.
 
 ### 6.2 Candidate Comparison
+| Component | Ranging Accuracy | Data Rate | Supply Voltage | Current Usage (Active TX/RX) | Price (Digikey CAD) | Stock |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **DWM3000** | < 10 cm | Up to 6.8 Mbps | 2.5V - 3.6V | ~45 - 55 mA (Peak) | ~$37.72 | 10,090 |
+| **DWM1000** | ~10 cm | Up to 6.8 Mbps | 2.8V - 3.6V | TX ~31mA / RX ~64mA | ~$37.72 | 0 |
 
 ### 6.3 Technical Analysis & Takeaways
+While the DWM1000 is better documented, the DWM3000 is far better in terms of accuracy, interference handling and stock
 
 ### 6.4 Final Verdict
+The **DWM3000** is the primary pick based on the factors mentioned above.
 
 <!------------------------------------------------------------------------------------------ -->
 ## 7. Battery and Power Regulation
 ### 7.1 Requirements Trace
+-`[REQ-HW-03]` Onboard Power Regulation:** The power distribution network shall regulate a stable **3.3V power rail** ($\pm 2\%$) for logic, state estimation sensing, and RF transceivers across the entire battery discharge curve.
 
 ### 7.2 Candidate Comparison
+| Component | Topology | Input Voltage Range | Max Output Current | Dropout / Efficiency | Quiescent Current ($I_q$) | Package | Price (JLC CAD) | Stock |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- | :---: | :---: |
+| **TPS7A91** | Linear LDO (Ultra-Low Noise) | 1.4V – 6.5V | 1000 mA | ~200 mV (at 1A) | ~2.1 mA | SON-10 ($2.5 \times 2.5\text{ mm}$) | ~$0.99 | 268+ |
+| **MIC5319** | Linear LDO (Fixed) | 2.5V – 5.5V | 500 mA | ~200 mV (at 500mA) | ~150 µA | TSOT-23-5 | ~$0.85 | 640 |  
+| **RT9080** | Linear LDO (Low Quiescent) | 1.2V – 5.5V | 600 mA | ~310 mV (at 600mA) | ~2 µA | SOT-23-5 | ~$0.10 | 31751 |
+| **TPS63030** | Synchronous Buck-Boost | 1.8V – 5.5V | Up to 800 mA | Up to 96% Efficiency | ~50 µA | VSON-10 ($2.5 \times 2.5\text{ mm}$) | ~$4.04 | 9033 |
+| **TPS63802** | High-Current Buck-Boost | 1.3V – 5.5V | Up to 2000 mA | Up to 95% Efficiency | ~11 µA | DFN ($1.4 \times 2.3\text{ mm}$) | ~$1.5 | 418 |
 
 ### 7.3 Technical Analysis & Takeaways
+- **Noise vs. Rail Stiffness Trade-off:** Switching regulators (Buck-Boost) maintain absolute voltage across a 1S discharge curve from 4.2V down to 3.0V, but introduce high-frequency switching ripple that can introduce noise into the DWM3000 UWB receiver and IMU analog supply rails. Ultra-low-dropout (LDO) regulators provide a pristine, quiet noise floor but suffer from voltage tracking when the battery drops near the end of its discharge cycle.
+- **Mitigating LDO End-of-Life Sag:** By utilizing a high-current LDO with ultra-low dropout (such as the **TPS7A91**) paired with strategic local bulk decoupling capacitors placed near the UWB and ToF modules, transient current spikes should be mitigated against with respect to the UWB and Tof.
+- **Operational Safeguards:** A software-based low-voltage threshold will be implemented to automatically trigger a controlled landing sequence before the 1S cell discharges, avoiding erratic sensor behavior.
 
 ### 7.4 Final Verdict
+- **Primary Pick: `TPS7A91` (Ultra-Low-Dropout LDO)**
+  * **Why:** Delivers 1A of continuous high-current headroom, ultra-low output noise, high PSRR, and a low dropout voltage. It isolates the DWM3000 UWB module and ICM-42688-P IMU from high-frequency switching noise while safely handling transient current spikes without sagging when the battery is almost discharged.
+
 <!------------------------------------------------------------------------------------------ -->
-## 8. Motors and Driving circuitry
+## 8. Motor Selection
 ### 8.1 Requirements Trace
+-`[REQ-HW-01]` Maximum Takeoff Mass: The fully assembled drone (including PCB, motors, frame, props, UWB transceiver, and battery) shall not exceed 40 grams.
+-`[REQ-HW-04]` EMI & Motor Noise Handling: Motor drive channels shall incorporate hardware suppression (Schottky flyback diodes and decoupling bulk capacitance) to isolate inductive switching noise from sensor and digital logic buses.
+-`[REQ-HW-06]` Current draw:** To maximise battery life, components should attempt to minimise current draw
 
 ### 8.2 Candidate Comparison
+| Component / Type | Size / Form Factor | Operating Voltage | Kv Rating | Max Current Draw |
+| :---:| :---:| :---:   | :---: |:---: |
+| **0820 Coreless Motors** | $8 \times 20\text{ mm}$ | 1S LiPo (3.0V – 4.2V) | ~14000-18000 Kv | ~5A (Peak) |
+| **0716 Coreless Motors** | $7 \times 16\text{ mm}$ | 1S LiPo (3.0V – 4.2V) | ~14000-16000 Kv | ~2.5A |
 
 ### 8.3 Technical Analysis & Takeaways
+- **Thrust-to-Weight vs. Weight Budget (`[REQ-HW-01]`):** While 0820 coreless motors provide superior torque, thrust, and payload capacity to carry custom UWB hardware, their higher mass and peak current draw (~5A) push closer to the 40g AUW limit compared to lighter 0716 options (~2.5A peak).
+- **Electrical Isolation (`[REQ-HW-04]`):** High-current motor paths feed directly from the raw VBAT supply and must be tightly decoupled from the sensitive 3.3V LDO sensor rail, utilizing flyback diodes to safely clamp inductive kickback spikes.
 
 ### 8.4 Final Verdict
+- **Primary Pick: `0820 Coreless Motors`**
+  * **Why:** Provides the necessary thrust to lift the custom multi-sensor UWB PCB and battery within the sub-40g constraint.
 <!------------------------------------------------------------------------------------------ -->
-## 9. Radio Module
+## 9. Motor Driving mosfet Selection
 ### 9.1 Requirements Trace
+-`[REQ-HW-04]` EMI & Motor Noise Handling: Motor drive channels shall incorporate hardware suppression (Schottky flyback diodes and decoupling bulk capacitance) to isolate inductive switching noise from sensor and digital logic buses.
 
 ### 9.2 Candidate Comparison
+| Component | Type | Drain-Source Voltage ($V_{DS}$) | Continuous Drain Current ($I_D$) | On-Resistance ($R_{DS(on)}$) | Package | Stock / Availability |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+|**AO3400** | N-Channel MOSFET | 30V | 5.8A | < 33 m $\Omega$ (at $V_{GS}=4.5\text{V}$) | SOT-23 | 809677 |
+| **SI2302 (A2SHB)** | N-Channel MOSFET | 20V | 2.8A | < 75 m $\Omega$ (at $V_{GS}=4.5\text{V}$) | SOT-23 |64986|
 
 ### 9.3 Technical Analysis & Takeaways
+- **Current Headroom & $R_{DS(on)}$:** Since 0820 coreless motors draw up to ~5A peak under aggressive maneuvers, the **AO3400** provides sufficient margin with its 5.8A continuous rating and low on-resistance (~33 m$\Omega$).
 
 ### 9.4 Final Verdict
+- **Primary Pick: `AO3400` (N-Channel MOSFET)**
+* **Why:** Delivers an optimal blend of a compact SOT-23 footprint, high continuous current capacity (5.8A) to handle 0820 motor stall spikes, and low $R_{DS(on)}$ for efficient thermal performance.
+
 <!------------------------------------------------------------------------------------------ -->
-## 10. External Memory
+
+## 10. Radio Module
 ### 10.1 Requirements Trace
+-`[REQ-SW-04]` Telemetry Transmission: System state telemetry (attitude, battery voltage, position, system status) shall transmit over a wireless link at a selectable rate of 10 Hz to 50 Hz.
 
 ### 10.2 Candidate Comparison
+| Component | Protocol / Standard | Frequency Band | Max Packet Rate | Communication Interface | Price (JLC / LCSC) | Stock
+| :---        | :---: | :---: | :---: | :---: | :---: | :---: | 
+| **SX1280** | ExpressLRS / LoRa / FLRC            | 2.4 GHz ISM | Up to 500 Hz+ | SPI + DIO | ~$3.28 |746
+| **NRF24L01** | Proprietary / Enhanced ShockBurst | 2.4 GHz ISM | Up to ~100–125 Hz | SPI | ~$4.44 |11885
 
 ### 10.3 Technical Analysis & Takeaways
+- **Proprietary & Bare-Metal Control**: The NRF24L01 provides a native register-level architecture via SPI while the SX1280 requires the use of the ExpressLRS protocol requiring the need for an external SX1280 module plus an ESP32 device to act as the ground station transceiver
+
+- **Multiceiver Topology**: Supports hardware-level multi-device communication ("Multiceiver" feature), allowing a single ground station node to handle multiple drone links
+
+- **Prototyping Safety Net**: Accommodates a dual-sided layout strategy (top-layer bare QFN IC with reference matching network, bottom-layer fallback SMT module pads on a dedicated SPI bus) to mitigate high-frequency layout risks.
 
 ### 10.4 Final Verdict
+- **Primary Pick: `NRF24L01`**
+* **Why:** Chosen for its low implementation complexity, register-level transparency, and ability to fulfill the 10 Hz to 50 Hz telemetry requirement over a clean, proprietary SPI link without the heavy protocol overhead of ExpressLRS/SX1280 systems.
+
+
+<!------------------------------------------------------------------------------------------ -->
+## 11. External Memory
+### 11.1 Requirements Trace
+-`[REQ-SW-06]` Blackbox Flight Logging: The system shall record high-frequency telemetry and sensor data (IMU rates, attitude estimates, control outputs, and system states) to non-volatile external flash memory for post-flight tuning and debugging analysis.
+
+### 11.2 Candidate Comparison
+| Component | Capacity | Interface | Max Clock Speed | Standby Current | Price (JLC CAD) | Stock | Operating Voltage (V)
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+| **W25Q128JV** | 16 MB (128M-bit) | SPI / Quad SPI | 133 MHz | ~1 µA | ~$2.55 | 44454 | 2.7 to 3.6V
+| **GD25Q128E** | 16 MB (128M-bit) | SPI / Quad SPI | 133 MHz |  ~3 µA | ~$1.48| 10000 |2.7 to 3.6V
+
+### 11.3 Technical Analysis & Takeaways
+Both devices are functionally identical with the only primary difference being the Manufacturer Ids which is more of a software config
+
+### 11.4 Final Verdict
+* **Primary Pick: `GD25Q128E` (16 MB SPI Flash)**
+  * **Why:** Delivers identical 16 MB capacity, 133 MHz SPI performance, while offering a lower cost and high stock availability for automated JLCPCB SMT assembly.
 
