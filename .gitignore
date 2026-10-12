@@ -1,0 +1,20 @@
+# --- KiCad Generated Files ---
+# Temporary and backup files
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*~
+_autosave-*
+*.tmp
+
+# Local project settings (user-specific UI states, recently opened files)
+*.kicad_prl
+
+# Cache files
+fp-info-cache
+
+# Local history folder (KiCad version-dependent)
+.history/
+
+# KiCad Lock Files
+*.lck
