@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "f8b05fc1-0838-4851-bd74-ef5c1cb77ccf")
+	(uuid "9619cd2c-a9f7-4831-a0e8-0bde0473f77b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"

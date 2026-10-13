@@ -665,7 +665,7 @@
         "uuid": "3a60ba80-6c79-4a64-bdfd-12960f1d2492"
       }
     ],
-    "used_designators": "#PWR1-24,C1-21,FB1,J1-5,R1-7,SW1,U1-4",
+    "used_designators": "#PWR1-36,C1-23,D1-4,FB1,J1-8,Q1-4,R1-15,SW1,U1-4,X1,Y1",
     "variants": []
   },
   "sheets": [
@@ -688,6 +688,26 @@
     [
       "656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
       "Microcontroller"
+    ],
+    [
+      "011e700c-c450-4362-bd4b-119060744e53",
+      "Radio"
+    ],
+    [
+      "a08ee1aa-6ecc-4ecf-9419-6364a153e91a",
+      "Ultra Wide Band"
+    ],
+    [
+      "95338f3f-4919-4f0b-979a-8be77de3b32d",
+      "Flash Memory"
+    ],
+    [
+      "690acf73-d91b-4e3c-a6dd-e943c126d486",
+      "Time of Flight"
+    ],
+    [
+      "a5ddbf55-9585-4781-84bc-171513f4d0e9",
+      "Motor Driver"
     ]
   ],
   "text_variables": {},

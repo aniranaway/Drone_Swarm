@@ -1,0 +1,41 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "4ec6e24b-deda-4016-87e5-fb461e258c15")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "SPI2_SCK"
+		(shape input)
+		(at 26.67 24.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2200b8d9-b933-4c85-b53b-f4b5bacf9ba0")
+	)
+	(hierarchical_label "SPI2_MOSI"
+		(shape input)
+		(at 26.67 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5147f865-3a28-4747-86fb-91eb570398ce")
+	)
+	(hierarchical_label "SPI2_MISO"
+		(shape output)
+		(at 26.67 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0ad75ce-74bc-4e09-b914-b324ba66e2de")
+	)
+)
