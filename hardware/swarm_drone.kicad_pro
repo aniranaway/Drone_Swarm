@@ -665,13 +665,29 @@
         "uuid": "3a60ba80-6c79-4a64-bdfd-12960f1d2492"
       }
     ],
-    "used_designators": "#PWR1-20,C1-19,FB1,J1-5,R1-7,SW1,U1-4",
+    "used_designators": "#PWR1-24,C1-21,FB1,J1-5,R1-7,SW1,U1-4",
     "variants": []
   },
   "sheets": [
     [
       "3a60ba80-6c79-4a64-bdfd-12960f1d2492",
       "swarm_drone"
+    ],
+    [
+      "44f345a2-ae6d-4d47-8f7c-a9b5694879b4",
+      "Power Regulation"
+    ],
+    [
+      "e65089a6-6b48-4e50-8c51-5b406f66e91b",
+      "IMU"
+    ],
+    [
+      "dbdff407-1322-42fc-b2ff-66e3e1f62e33",
+      "Barometer"
+    ],
+    [
+      "656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
+      "Microcontroller"
     ]
   ],
   "text_variables": {},
