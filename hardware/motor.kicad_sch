@@ -1066,9 +1066,9 @@
 	)
 	(rectangle
 		(start 85.09 39.37)
-		(end 207.01 91.44)
+		(end 207.01 120.65)
 		(stroke
-			(width 0.0762)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
@@ -1076,9 +1076,20 @@
 		)
 		(uuid "6655e8b2-02d5-4335-bfd1-3ea3b4da6356")
 	)
+	(text "Application Notes\n1) Motor driving circuitry should be on the bottom layer and use star routing\n2) Trace width should be 2.5 mm - 2.8 mm with the following assumptions\n          a) 5A max draw\n          b) 1oz/ft2 copper\n          c) 10 deg C of ambient rise\n          d) 24 deg C ambient temp\n3) PWM lines should not run parallel to the power traces\n4) MOSFET Drain and Source should have large copper pours to helps dissapate heat"
+		(exclude_from_sim no)
+		(at 86.868 99.314 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b167e72b-cc8b-4c7c-9bbe-14af646ee5a1")
+	)
 	(text "Motor Driver\n"
 		(exclude_from_sim no)
-		(at 194.31 89.154 0)
+		(at 194.564 118.364 0)
 		(effects
 			(font
 				(size 2.54 2.54)
