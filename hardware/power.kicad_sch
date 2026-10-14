@@ -1674,7 +1674,7 @@
 		)
 		(uuid "beaa25bf-8e6d-4d48-9db2-ae37b1d4c130")
 	)
-	(hierarchical_label "BAT_SENS"
+	(hierarchical_label "BAT_SENSE"
 		(shape output)
 		(at 57.15 57.15 0)
 		(effects

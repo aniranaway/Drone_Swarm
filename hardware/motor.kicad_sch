@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "03e9ebef-87d0-4b98-b18c-cbb6a73997ac")
+	(uuid "17c0d452-e127-4ac1-8370-79c14e9b0651")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Socket"
@@ -1075,6 +1075,18 @@
 			(type none)
 		)
 		(uuid "6655e8b2-02d5-4335-bfd1-3ea3b4da6356")
+	)
+	(text "Motor Driver\n"
+		(exclude_from_sim no)
+		(at 194.31 89.154 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "e0bacdd3-376b-46c0-8206-80f28706b30a")
 	)
 	(junction
 		(at 92.71 67.31)

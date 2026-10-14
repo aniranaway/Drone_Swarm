@@ -3,4 +3,5 @@
 	(lib (name "ICM-42688-P") (type "KiCad") (uri "${KIPRJMOD}/libs/ICM-42688-P.kicad_sym") (options "") (descr ""))
 	(lib (name "2026-10-13_02-17-36") (type "KiCad") (uri "${KIPRJMOD}/libs/2026-10-13_02-17-36.kicad_sym") (options "") (descr ""))
 	(lib (name "2026-10-13_21-16-43") (type "KiCad") (uri "${KIPRJMOD}/libs/2026-10-13_21-16-43.kicad_sym") (options "") (descr ""))
+	(lib (name "GD25Q128") (type "KiCad") (uri "${KIPRJMOD}/libs/GD25Q128.kicad_sym") (options "") (descr ""))
 )

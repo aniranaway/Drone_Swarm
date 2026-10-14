@@ -4886,16 +4886,6 @@
 		)
 		(uuid "2bededb7-6b96-4917-a8be-2576b0c5b663")
 	)
-	(label "SPI3_MISO"
-		(at 124.46 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2e40ddfd-5da0-4c97-b43f-4b4c7be0a28e")
-	)
 	(label "SWDIO"
 		(at 167.64 88.9 0)
 		(effects
@@ -4956,26 +4946,6 @@
 		)
 		(uuid "cc7ab1f2-3541-4ba2-aaf8-19d78f20e59e")
 	)
-	(label "SPI3_MOSI"
-		(at 124.46 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d681c8ee-4b54-45de-9c19-91d458a5d5f0")
-	)
-	(label "SPI3_SCK"
-		(at 124.46 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dccc74bd-506f-4d34-8b81-aaedf381c60e")
-	)
 	(label "HSE_OUT"
 		(at 127 68.58 180)
 		(effects
@@ -5019,6 +4989,28 @@
 		)
 		(uuid "08855f25-71cb-4c4a-9eed-3577bf64c3cd")
 	)
+	(hierarchical_label "SPI3_MISO"
+		(shape input)
+		(at 124.46 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0b10c651-dca1-4a47-b18a-f7bb4570e608")
+	)
+	(hierarchical_label "RADIO_INT"
+		(shape input)
+		(at 88.9 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0b99c2c1-eedc-4d7c-a446-158f6310af91")
+	)
 	(hierarchical_label "SPI2_MISO"
 		(shape input)
 		(at 124.46 83.82 180)
@@ -5029,6 +5021,17 @@
 			(justify right)
 		)
 		(uuid "0e664b33-0eef-4678-99b9-77c1eaace00f")
+	)
+	(hierarchical_label "RADIO_ALT_CE"
+		(shape output)
+		(at 88.9 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "21e1067a-523d-46ab-b9bf-bb39f68bad69")
 	)
 	(hierarchical_label "IMU_CS"
 		(shape output)
@@ -5063,9 +5066,53 @@
 		)
 		(uuid "55390af9-3b45-4f0b-aa68-765f2c38e20f")
 	)
+	(hierarchical_label "RADIO_ALT_CS"
+		(shape output)
+		(at 88.9 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55c416b4-5795-477a-8f6d-ba076723fddd")
+	)
+	(hierarchical_label "RADIO_ALT_INT"
+		(shape input)
+		(at 88.9 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c40d80a-0af7-4560-85b1-7cfea41b301d")
+	)
+	(hierarchical_label "FLASH_CS"
+		(shape output)
+		(at 87.63 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d4980b1-02bd-44d0-95b4-694f4e708e41")
+	)
+	(hierarchical_label "UWB_CS"
+		(shape output)
+		(at 77.47 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7854f0ec-76db-44b0-98fd-e13ea0f8fb0a")
+	)
 	(hierarchical_label "BAT_SENSE"
 		(shape input)
-		(at 90.17 118.11 180)
+		(at 88.9 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5073,6 +5120,28 @@
 			(justify right)
 		)
 		(uuid "7f7e0bd3-f5ac-4e44-b78a-bbc7be74af95")
+	)
+	(hierarchical_label "UWB_INT"
+		(shape input)
+		(at 77.47 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "888b53af-4398-4e84-80ab-fa45a08d3d40")
+	)
+	(hierarchical_label "SPI3_SCK"
+		(shape output)
+		(at 124.46 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "96755f4f-d73c-4b04-b635-b28debcde6ab")
 	)
 	(hierarchical_label "M4"
 		(shape output)
@@ -5096,7 +5165,29 @@
 		)
 		(uuid "a9c78e9e-3230-47fd-ba81-cee62d1d52c5")
 	)
-	(hierarchical_label "VL53L0X_INT"
+	(hierarchical_label "UWB_RESET"
+		(shape output)
+		(at 77.47 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b2e57727-a184-4c9b-ba8b-e85422ffc8dc")
+	)
+	(hierarchical_label "RADIO_CS"
+		(shape output)
+		(at 88.9 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1131b91-0a2d-4072-b6c6-725185590cb4")
+	)
+	(hierarchical_label "VL53L1X_INT"
 		(shape input)
 		(at 90.17 120.65 180)
 		(effects
@@ -5106,6 +5197,17 @@
 			(justify right)
 		)
 		(uuid "c87e15d5-a1f8-4a1c-b24c-f3d964967605")
+	)
+	(hierarchical_label "RADIO_CE"
+		(shape output)
+		(at 88.9 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de729512-268b-4130-86c7-7480ff157abc")
 	)
 	(hierarchical_label "SPI2_SCK"
 		(shape output)
@@ -5172,6 +5274,17 @@
 			(justify left)
 		)
 		(uuid "f0034f1d-5f76-4cd2-8640-7aba373248eb")
+	)
+	(hierarchical_label "SPI3_MOSI"
+		(shape output)
+		(at 124.46 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f284260b-405d-4999-8d66-15ecc866208d")
 	)
 	(hierarchical_label "SPI2_MOSI"
 		(shape output)
@@ -8207,7 +8320,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ABM3B_ABR"
+		(property "Footprint" ""
 			(at 81.28 74.93 0)
 			(hide yes)
 			(show_name no)
