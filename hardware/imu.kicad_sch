@@ -1034,7 +1034,7 @@
 	)
 	(rectangle
 		(start 97.155 64.77)
-		(end 199.39 119.38)
+		(end 199.39 125.73)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -1044,9 +1044,9 @@
 		)
 		(uuid "c0c7d67f-cd43-4d13-b046-2328f3d9138f")
 	)
-	(text "Application Notes\n1) 0.1uF => X7R, +- 10%\n2) 2.2uF => X7R, +- 10%\n3) 10nF => X7R, +- 10%"
+	(text "Application Notes\n1) IMU Shoulde be placed as close to the geometric centre of the PCB as possible\n2) IMU should not be placed near high heat components\n3) decoupling caps should be placed very close to power pins\n"
 		(exclude_from_sim no)
-		(at 98.044 109.22 0)
+		(at 98.044 117.348 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1057,7 +1057,7 @@
 	)
 	(text "IMU\n"
 		(exclude_from_sim no)
-		(at 195.072 116.586 0)
+		(at 195.834 124.206 0)
 		(effects
 			(font
 				(size 2.54 2.54)
