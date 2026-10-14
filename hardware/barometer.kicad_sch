@@ -745,7 +745,7 @@
 	)
 	(rectangle
 		(start 93.1188 63.357)
-		(end 195.3538 117.967)
+		(end 198.12 130.81)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -755,9 +755,20 @@
 		)
 		(uuid "bba3e79b-147e-4338-9ac6-8d4e366d627b")
 	)
+	(text "Application Notes\n1) Barometer should be placed on the central axis of the PCB to avoid pressure drops from the motors\n2) Barometer should be placed away from high heat components\n3) Barometer should not be placed near the very edge of the PCB to avoid twisiting forces adding noise"
+		(exclude_from_sim no)
+		(at 93.98 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b1870f1-8818-43ba-9063-fbda001be83b")
+	)
 	(text "Barometer\n"
 		(exclude_from_sim no)
-		(at 184.912 116.078 0)
+		(at 187.706 128.778 0)
 		(effects
 			(font
 				(size 2.54 2.54)
