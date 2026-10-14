@@ -172,6 +172,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 59.69 20.32)
+		(end 238.76 162.56)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d34ad83c-69d4-404f-8167-5da7cbdd49c6")
+	)
+	(text "HIGH LEVEL BLOCK DIAGRAM\n"
+		(exclude_from_sim no)
+		(at 224.028 160.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a605ddd5-0a99-4256-a4c0-477a3843329a")
+	)
 	(junction
 		(at 193.04 118.11)
 		(diameter 0)
@@ -240,7 +262,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 66.04) (xy 135.89 60.96)
+			(xy 135.89 62.23) (xy 135.89 60.96)
 		)
 		(stroke
 			(width 0)
@@ -270,7 +292,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 116.84) (xy 148.59 138.43)
+			(xy 148.59 116.84) (xy 148.59 134.62)
 		)
 		(stroke
 			(width 0)
@@ -280,7 +302,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 66.04) (xy 143.51 60.96)
+			(xy 143.51 62.23) (xy 143.51 60.96)
 		)
 		(stroke
 			(width 0)
@@ -470,7 +492,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 66.04) (xy 148.59 60.96)
+			(xy 148.59 62.23) (xy 148.59 60.96)
 		)
 		(stroke
 			(width 0)
@@ -530,7 +552,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 66.04) (xy 146.05 60.96)
+			(xy 146.05 62.23) (xy 146.05 60.96)
 		)
 		(stroke
 			(width 0)
@@ -550,7 +572,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 116.84) (xy 144.78 138.43)
+			(xy 144.78 116.84) (xy 144.78 134.62)
 		)
 		(stroke
 			(width 0)
@@ -560,7 +582,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 116.84) (xy 152.4 138.43)
+			(xy 152.4 116.84) (xy 152.4 134.62)
 		)
 		(stroke
 			(width 0)
@@ -620,7 +642,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 66.04) (xy 156.21 50.8)
+			(xy 156.21 62.23) (xy 156.21 50.8)
 		)
 		(stroke
 			(width 0)
@@ -710,7 +732,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 66.04) (xy 151.13 45.72)
+			(xy 151.13 62.23) (xy 151.13 45.72)
 		)
 		(stroke
 			(width 0)
@@ -760,7 +782,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 66.04) (xy 153.67 48.26)
+			(xy 153.67 62.23) (xy 153.67 48.26)
 		)
 		(stroke
 			(width 0)
@@ -840,7 +862,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 116.84) (xy 140.97 138.43)
+			(xy 140.97 116.84) (xy 140.97 134.62)
 		)
 		(stroke
 			(width 0)
@@ -850,7 +872,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 66.04) (xy 140.97 60.96)
+			(xy 140.97 62.23) (xy 140.97 60.96)
 		)
 		(stroke
 			(width 0)
@@ -900,7 +922,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 66.04) (xy 138.43 60.96)
+			(xy 138.43 62.23) (xy 138.43 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1690,8 +1712,8 @@
 		)
 	)
 	(sheet
-		(at 120.65 66.04)
-		(size 53.34 50.8)
+		(at 120.65 62.23)
+		(size 53.34 54.61)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1705,7 +1727,7 @@
 		)
 		(uuid "656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1")
 		(property "Sheetname" "Microcontroller"
-			(at 113.284 65.532 0)
+			(at 120.65 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1718,7 +1740,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 120.65 117.602 0)
+			(at 120.65 113.792 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1919,7 +1941,7 @@
 			)
 		)
 		(pin "SPI3_MISO" input
-			(at 135.89 66.04 90)
+			(at 135.89 62.23 90)
 			(uuid "6dc99050-93ba-4f27-bebe-83ffa9745014")
 			(effects
 				(font
@@ -1929,7 +1951,7 @@
 			)
 		)
 		(pin "SPI3_MOSI" output
-			(at 138.43 66.04 90)
+			(at 138.43 62.23 90)
 			(uuid "81fe1582-83cb-442f-bd2b-a9d5227c1057")
 			(effects
 				(font
@@ -1939,7 +1961,7 @@
 			)
 		)
 		(pin "SPI3_SCK" output
-			(at 140.97 66.04 90)
+			(at 140.97 62.23 90)
 			(uuid "9d1dc35b-ece4-49a1-877c-244c50a1c5ec")
 			(effects
 				(font
@@ -1949,7 +1971,7 @@
 			)
 		)
 		(pin "RADIO_ALT_CE" output
-			(at 143.51 66.04 90)
+			(at 143.51 62.23 90)
 			(uuid "75479768-42e0-4138-af6b-5a232f2b98c9")
 			(effects
 				(font
@@ -1959,7 +1981,7 @@
 			)
 		)
 		(pin "RADIO_ALT_CS" output
-			(at 146.05 66.04 90)
+			(at 146.05 62.23 90)
 			(uuid "76c1f038-0dfd-4425-b191-08ad787c4a3f")
 			(effects
 				(font
@@ -1969,7 +1991,7 @@
 			)
 		)
 		(pin "RADIO_ALT_INT" input
-			(at 148.59 66.04 90)
+			(at 148.59 62.23 90)
 			(uuid "78f58b21-0505-4ebb-9727-fb2d9fd09db6")
 			(effects
 				(font
@@ -1979,7 +2001,7 @@
 			)
 		)
 		(pin "RADIO_CE" output
-			(at 151.13 66.04 90)
+			(at 151.13 62.23 90)
 			(uuid "efd08833-ee73-443a-b606-032882e66faa")
 			(effects
 				(font
@@ -1989,7 +2011,7 @@
 			)
 		)
 		(pin "RADIO_CS" output
-			(at 153.67 66.04 90)
+			(at 153.67 62.23 90)
 			(uuid "d4b2de99-a668-4387-a493-8129da86e6fc")
 			(effects
 				(font
@@ -1999,7 +2021,7 @@
 			)
 		)
 		(pin "RADIO_INT" input
-			(at 156.21 66.04 90)
+			(at 156.21 62.23 90)
 			(uuid "d35746d2-e67b-40a1-ac0f-be6eb195f0fd")
 			(effects
 				(font
@@ -2130,7 +2152,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2140,7 +2161,7 @@
 		)
 		(uuid "95338f3f-4919-4f0b-979a-8be77de3b32d")
 		(property "Sheetname" "Flash Memory"
-			(at 208.28 133.9084 0)
+			(at 208.28 134.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2320,7 +2341,7 @@
 		)
 	)
 	(sheet
-		(at 135.89 138.43)
+		(at 135.89 134.62)
 		(size 21.59 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2335,7 +2356,7 @@
 		)
 		(uuid "a5ddbf55-9585-4781-84bc-171513f4d0e9")
 		(property "Sheetname" "Motor Driver"
-			(at 135.636 137.922 0)
+			(at 135.636 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2348,7 +2369,7 @@
 			)
 		)
 		(property "Sheetfile" "motor.kicad_sch"
-			(at 158.0646 156.21 90)
+			(at 135.636 153.416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2359,7 +2380,7 @@
 			)
 		)
 		(pin "M1" input
-			(at 140.97 138.43 90)
+			(at 140.97 134.62 90)
 			(uuid "31943085-5cc7-4b96-807f-aef57fbda86b")
 			(effects
 				(font
@@ -2369,7 +2390,7 @@
 			)
 		)
 		(pin "M2" input
-			(at 144.78 138.43 90)
+			(at 144.78 134.62 90)
 			(uuid "a61cae67-7a45-4feb-a101-8b92f709cb4e")
 			(effects
 				(font
@@ -2379,7 +2400,7 @@
 			)
 		)
 		(pin "M3" input
-			(at 148.59 138.43 90)
+			(at 148.59 134.62 90)
 			(uuid "46cae742-2d6c-4457-a8d3-6805d1c8d124")
 			(effects
 				(font
@@ -2389,7 +2410,7 @@
 			)
 		)
 		(pin "M4" input
-			(at 152.4 138.43 90)
+			(at 152.4 134.62 90)
 			(uuid "813a0258-5516-4a02-be49-e14ba02a980d")
 			(effects
 				(font
