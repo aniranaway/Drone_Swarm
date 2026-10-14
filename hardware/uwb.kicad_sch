@@ -1134,17 +1134,6 @@
 		)
 		(uuid "02d5fdd4-ac1d-4454-b3fc-747aecba3592")
 	)
-	(hierarchical_label "SPI2_MISO"
-		(shape output)
-		(at 26.67 29.21 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1a57219f-feef-49e7-ba03-b55ca7b3945c")
-	)
 	(hierarchical_label "SPI2_MOSI"
 		(shape input)
 		(at 168.91 73.66 0)
@@ -1188,28 +1177,6 @@
 			(justify left)
 		)
 		(uuid "771885ed-f2f1-4f98-8ef6-1f321b628aa7")
-	)
-	(hierarchical_label "SPI2_MOSI"
-		(shape input)
-		(at 26.67 26.67 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "add4ceeb-a483-45e6-93cd-7bf6d2a10972")
-	)
-	(hierarchical_label "SPI2_SCK"
-		(shape input)
-		(at 26.67 21.59 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec5bea36-dd7d-450e-b363-09cba7d2413c")
 	)
 	(hierarchical_label "SPI2_SCK"
 		(shape input)
@@ -1481,7 +1448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 182.372 69.85 90)
 			(hide yes)
 			(show_name no)

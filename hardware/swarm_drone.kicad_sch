@@ -244,7 +244,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 144.78) (xy 90.17 144.78)
+			(xy 96.52 144.78) (xy 88.9 144.78)
 		)
 		(stroke
 			(width 0)
@@ -324,7 +324,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.5567 86.36) (xy 120.65 86.36)
+			(xy 88.9 86.36) (xy 120.65 86.36)
 		)
 		(stroke
 			(width 0)
@@ -464,7 +464,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 149.86) (xy 101.6 149.86)
+			(xy 88.9 149.86) (xy 101.6 149.86)
 		)
 		(stroke
 			(width 0)
@@ -654,7 +654,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.5567 83.82) (xy 120.65 83.82)
+			(xy 88.9 83.82) (xy 120.65 83.82)
 		)
 		(stroke
 			(width 0)
@@ -674,7 +674,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 147.32) (xy 90.17 147.32)
+			(xy 99.06 147.32) (xy 88.9 147.32)
 		)
 		(stroke
 			(width 0)
@@ -834,7 +834,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.5567 88.9) (xy 120.65 88.9)
+			(xy 88.9 88.9) (xy 120.65 88.9)
 		)
 		(stroke
 			(width 0)
@@ -884,7 +884,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.5567 74.93) (xy 120.65 74.93)
+			(xy 88.9 74.93) (xy 120.65 74.93)
 		)
 		(stroke
 			(width 0)
@@ -904,7 +904,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.263 107.95) (xy 92.71 107.95)
+			(xy 88.9 107.95) (xy 92.71 107.95)
 		)
 		(stroke
 			(width 0)
@@ -914,7 +914,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.5567 77.47) (xy 120.65 77.47)
+			(xy 88.9 77.47) (xy 120.65 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1657,7 +1657,7 @@
 		)
 	)
 	(sheet
-		(at 66.04 102.87)
+		(at 64.677 102.87)
 		(size 24.223 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1672,7 +1672,7 @@
 		)
 		(uuid "44f345a2-ae6d-4d47-8f7c-a9b5694879b4")
 		(property "Sheetname" "Power Regulation"
-			(at 66.167 102.616 0)
+			(at 64.804 102.616 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1685,7 +1685,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 66.04 119.9646 0)
+			(at 64.677 119.9646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1696,7 +1696,7 @@
 			)
 		)
 		(pin "BAT_SENSE" output
-			(at 90.263 107.95 0)
+			(at 88.9 107.95 0)
 			(uuid "760e32aa-f0ba-4047-b304-c3625a3c0dbd")
 			(effects
 				(font
@@ -2071,7 +2071,7 @@
 		)
 	)
 	(sheet
-		(at 66.04 134.62)
+		(at 64.77 134.62)
 		(size 24.13 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2086,7 +2086,7 @@
 		)
 		(uuid "690acf73-d91b-4e3c-a6dd-e943c126d486")
 		(property "Sheetname" "Time of Flight"
-			(at 66.294 134.112 0)
+			(at 65.024 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2099,7 +2099,7 @@
 			)
 		)
 		(property "Sheetfile" "tof.kicad_sch"
-			(at 66.04 153.162 0)
+			(at 64.77 153.162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2110,7 +2110,7 @@
 			)
 		)
 		(pin "I2C1_SCL" bidirectional
-			(at 90.17 149.86 0)
+			(at 88.9 149.86 0)
 			(uuid "bf91a72d-1eaf-46c5-92a7-6d67356e94b8")
 			(effects
 				(font
@@ -2120,7 +2120,7 @@
 			)
 		)
 		(pin "I2C1_SDA" bidirectional
-			(at 90.17 147.32 0)
+			(at 88.9 147.32 0)
 			(uuid "4503e128-fd8d-4c89-8fe2-bbd3cab58631")
 			(effects
 				(font
@@ -2130,7 +2130,7 @@
 			)
 		)
 		(pin "VL53L1X_INT" output
-			(at 90.17 144.78 0)
+			(at 88.9 144.78 0)
 			(uuid "fd0aa63a-4776-4851-a758-09c1958b93b9")
 			(effects
 				(font
@@ -2527,7 +2527,7 @@
 		)
 	)
 	(sheet
-		(at 65.4267 73.025)
+		(at 64.77 73.025)
 		(size 24.13 17.145)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2542,7 +2542,7 @@
 		)
 		(uuid "e65089a6-6b48-4e50-8c51-5b406f66e91b")
 		(property "Sheetname" "IMU"
-			(at 65.786 72.644 0)
+			(at 65.1293 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2555,7 +2555,7 @@
 			)
 		)
 		(property "Sheetfile" "imu.kicad_sch"
-			(at 65.4267 90.7546 0)
+			(at 64.77 90.7546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2566,7 +2566,7 @@
 			)
 		)
 		(pin "IMU_CS" input
-			(at 89.5567 74.93 0)
+			(at 88.9 74.93 0)
 			(uuid "5bf97251-b740-4576-8734-94951c73cb82")
 			(effects
 				(font
@@ -2576,7 +2576,7 @@
 			)
 		)
 		(pin "IMU_INT" output
-			(at 89.5567 77.47 0)
+			(at 88.9 77.47 0)
 			(uuid "46b1d11f-70bf-4472-b272-9da4ed5f9963")
 			(effects
 				(font
@@ -2586,7 +2586,7 @@
 			)
 		)
 		(pin "SPI1_MOSI" input
-			(at 89.5567 86.36 0)
+			(at 88.9 86.36 0)
 			(uuid "53adea26-20d5-4884-a1e1-94b414fd4599")
 			(effects
 				(font
@@ -2596,7 +2596,7 @@
 			)
 		)
 		(pin "SPI1_MISO" output
-			(at 89.5567 83.82 0)
+			(at 88.9 83.82 0)
 			(uuid "0d9f099e-8591-4fc1-b2ac-2a2c839b6417")
 			(effects
 				(font
@@ -2606,7 +2606,7 @@
 			)
 		)
 		(pin "SPI1_SCK" input
-			(at 89.5567 88.9 0)
+			(at 88.9 88.9 0)
 			(uuid "5f288f06-a716-41db-b995-7434332bec00")
 			(effects
 				(font

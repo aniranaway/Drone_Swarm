@@ -1703,7 +1703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 146.812 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -1782,7 +1782,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
 			(at 185.42 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -1861,7 +1861,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
 			(at 128.27 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2264,7 +2264,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
 			(at 100.33 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2422,7 +2422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 118.872 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -2583,7 +2583,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
 			(at 156.21 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2741,7 +2741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 90.932 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -3316,7 +3316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 176.022 74.93 90)
 			(hide yes)
 			(show_name no)

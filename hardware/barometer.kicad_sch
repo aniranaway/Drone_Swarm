@@ -186,7 +186,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "VSS"
@@ -276,7 +276,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 40.64 -5.08 180)
 					(length 7.62)
 					(name "VSS"
@@ -294,7 +294,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 40.64 -2.54 180)
 					(length 7.62)
 					(name "VSS"
@@ -1212,7 +1212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 181.3052 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1372,7 +1372,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 107.6452 93.98 0)
 			(hide yes)
 			(show_name no)
