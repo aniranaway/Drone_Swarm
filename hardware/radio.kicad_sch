@@ -1883,6 +1883,17 @@
 		)
 		(uuid "6627fd9a-e9b0-499b-81c7-76dad161884f")
 	)
+	(text "Application Notes\n1)The traces from ANT1 and ANT2 through the matching network to the final output must be as short and straight as physically possible. No sharp 90-degree corners-use 45-degree bends or gentle curves.\n2)The final trace leading out from the matching network to the antenna must maintain a strict 50-ohm characteristic impedance\n3)No signal/ power traces should be routed underneath the RF section.\n4) Keep out zone should be used for the chip antenna"
+		(exclude_from_sim no)
+		(at 37.846 146.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b51cdb4-c9e1-4333-b95a-eb05a58608fa")
+	)
 	(junction
 		(at 166.37 57.15)
 		(diameter 0)
@@ -2339,6 +2350,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 102.87) (xy 147.32 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9071ef88-068f-4cdc-befe-b4e24d58d9c3")
+	)
+	(wire
+		(pts
 			(xy 161.29 86.36) (xy 161.29 71.12)
 		)
 		(stroke
@@ -2560,7 +2581,7 @@
 	)
 	(hierarchical_label "RADIO_ALT_CE"
 		(shape input)
-		(at 133.35 133.35 180)
+		(at 134.62 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2593,7 +2614,7 @@
 	)
 	(hierarchical_label "SPI3_MOSI"
 		(shape input)
-		(at 133.35 120.65 180)
+		(at 134.62 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2615,7 +2636,7 @@
 	)
 	(hierarchical_label "RADIO_ALT_INT"
 		(shape output)
-		(at 133.35 135.89 180)
+		(at 134.62 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2626,7 +2647,7 @@
 	)
 	(hierarchical_label "RADIO_ALT_CS"
 		(shape input)
-		(at 133.35 128.27 180)
+		(at 134.62 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2637,7 +2658,7 @@
 	)
 	(hierarchical_label "SPI3_MISO"
 		(shape output)
-		(at 133.35 123.19 180)
+		(at 134.62 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2659,7 +2680,7 @@
 	)
 	(hierarchical_label "SPI3_SCK"
 		(shape input)
-		(at 133.35 125.73 180)
+		(at 134.62 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3256,7 +3277,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "475ef0ee-fadc-4c60-94d0-8888cbacb612")
 		(property "Reference" "#PWR048"
 			(at 195.58 55.88 0)
@@ -3270,7 +3290,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 54.61 0)
+			(at 199.39 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3326,7 +3346,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 143.51 0)
+		(at 147.32 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3337,7 +3357,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b2ef685-1f27-48be-a276-8ded1dfc3faf")
 		(property "Reference" "#PWR045"
-			(at 146.05 149.86 0)
+			(at 147.32 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3348,7 +3368,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 148.59 0)
+			(at 147.32 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3358,7 +3378,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 143.51 0)
+			(at 147.32 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3369,7 +3389,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 143.51 0)
+			(at 147.32 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3380,7 +3400,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 143.51 0)
+			(at 147.32 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4148,7 +4168,7 @@
 	)
 	(symbol
 		(lib_id "RF:NRF24L01_Breakout")
-		(at 146.05 128.27 0)
+		(at 147.32 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4159,7 +4179,7 @@
 		(fields_autoplaced yes)
 		(uuid "d99ab239-9c24-4abd-8480-0d0644ea5f08")
 		(property "Reference" "U8"
-			(at 156.21 126.9999 0)
+			(at 157.48 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4170,7 +4190,7 @@
 			)
 		)
 		(property "Value" "NRF24L01_Breakout"
-			(at 156.21 129.5399 0)
+			(at 157.48 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4181,7 +4201,7 @@
 			)
 		)
 		(property "Footprint" "RF_Module:nRF24L01_Breakout"
-			(at 149.86 113.03 0)
+			(at 151.13 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4194,7 +4214,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
-			(at 146.05 130.81 0)
+			(at 147.32 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4205,7 +4225,7 @@
 			)
 		)
 		(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
-			(at 146.05 128.27 0)
+			(at 147.32 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4250,7 +4270,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 146.05 113.03 0)
+		(at 140.97 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4258,10 +4278,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dd235a7d-7a02-4037-855d-78ad9c23bb21")
 		(property "Reference" "#PWR044"
-			(at 146.05 116.84 0)
+			(at 140.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4272,7 +4291,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 146.05 107.95 0)
+			(at 143.764 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4282,7 +4301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 113.03 0)
+			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4293,7 +4312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 113.03 0)
+			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4304,7 +4323,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 113.03 0)
+			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
