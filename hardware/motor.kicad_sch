@@ -1633,7 +1633,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
 			(at 130.81 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2040,7 +2040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
 			(at 156.21 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2515,7 +2515,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
 			(at 187.96 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3485,7 +3485,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
 			(at 100.33 48.26 0)
 			(hide yes)
 			(show_name no)

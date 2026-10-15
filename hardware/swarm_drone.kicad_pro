@@ -289,6 +289,14 @@
   "erc": {
     "erc_exclusions": [
       [
+        "pin_to_pin|1066800|673100|008e9d64-c27c-4e57-835b-abb3ce035be7|488b059e-693e-4a69-8c60-edf8d221a21d|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
+        ""
+      ],
+      [
+        "pin_to_pin|1066800|698500|3e0e83d9-53f3-4e80-ad9f-72c0eeda104a|9f94228e-5927-4be1-8a23-4a54b2406595|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
+        ""
+      ],
+      [
         "pin_to_pin|1066800|749300|008e9d64-c27c-4e57-835b-abb3ce035be7|488b059e-693e-4a69-8c60-edf8d221a21d|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
         ""
       ],
@@ -322,6 +330,14 @@
       ],
       [
         "pin_to_pin|1638300|952500|c49a9f2e-5a59-4a63-a7ff-1fd06a1dc3bd|8c126a11-25c8-4991-abde-fdb5e6d6857f|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/dbdff407-1322-42fc-b2ff-66e3e1f62e33|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/dbdff407-1322-42fc-b2ff-66e3e1f62e33|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
+        ""
+      ],
+      [
+        "pin_to_pin|812800|673100|8d995386-c615-4d75-8d44-341701b77dd7|3e01d941-c13f-4a65-ab11-179027a2d453|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
+        ""
+      ],
+      [
+        "pin_to_pin|812800|698500|89fe2b8a-67f3-4830-ae87-3e1c5f3e9099|3315407c-7f48-4854-ae3d-eb7bf67e163a|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1|/3a60ba80-6c79-4a64-bdfd-12960f1d2492/656d1c91-d6c8-4e27-bc05-a3fdaba7fbe1",
         ""
       ],
       [
