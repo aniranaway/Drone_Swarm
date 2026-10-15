@@ -875,7 +875,7 @@
 	)
 	(rectangle
 		(start 90.17 45.72)
-		(end 198.12 127)
+		(end 198.12 147.32)
 		(stroke
 			(width 0)
 			(type default)
@@ -885,9 +885,20 @@
 		)
 		(uuid "9d05afdf-360f-4a58-91d0-d541fed981ab")
 	)
+	(text "Application Notes\n1)C24 and C25 should be as close to AVSSVCSEL and AVDDVCSEL as possible"
+		(exclude_from_sim no)
+		(at 91.694 117.348 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e64cb497-349e-46e1-967c-4dbcbb96b1bd")
+	)
 	(text "Time of Flight\n"
 		(exclude_from_sim no)
-		(at 183.134 124.714 0)
+		(at 183.896 145.542 0)
 		(effects
 			(font
 				(size 2.54 2.54)
