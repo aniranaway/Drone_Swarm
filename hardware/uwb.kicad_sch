@@ -936,7 +936,7 @@
 	)
 	(rectangle
 		(start 88.9 49.53)
-		(end 205.74 127)
+		(end 205.74 137.16)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -946,9 +946,20 @@
 		)
 		(uuid "365fadb0-ab4b-4af2-ae64-7456eec59be5")
 	)
+	(text "Application Notes\n1)Chip Antenna should hang of the edge of the board\n2) SPI traces should be as short as possible"
+		(exclude_from_sim no)
+		(at 89.916 122.428 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38d328be-dc8b-4ffe-b220-e65bd6484c19")
+	)
 	(text "Ultra Wide Band\n"
 		(exclude_from_sim no)
-		(at 188.976 124.968 0)
+		(at 189.23 134.62 0)
 		(effects
 			(font
 				(size 2.54 2.54)
