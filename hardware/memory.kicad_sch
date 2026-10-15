@@ -871,6 +871,17 @@
 		)
 		(uuid "20f7af06-185f-43ca-b939-f479c6924f29")
 	)
+	(text "Application Notes\n1)SPI lines should be as short as possible\n2) Decoupling caps should be really close to the power pins\n3) SPI lines should not be parallel to the motor power lines\n"
+		(exclude_from_sim no)
+		(at 92.456 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba8e6b03-b153-4b7b-bb57-5b59fe3d8cdd")
+	)
 	(junction
 		(at 187.96 71.12)
 		(diameter 0)
@@ -1416,7 +1427,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39fa1829-571b-42e7-b735-96b44cedcb19")
 		(property "Reference" "#PWR041"
 			(at 198.12 90.17 0)
@@ -1430,7 +1440,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 88.9 0)
+			(at 197.612 87.122 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
