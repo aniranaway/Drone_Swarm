@@ -4,4 +4,5 @@
 	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints.pretty") (options "") (descr ""))
 	(lib (name "abm") (type "KiCad") (uri "${KIPRJMOD}/libs/abm.pretty") (options "") (descr ""))
 	(lib (name "GD25Q128") (type "KiCad") (uri "${KIPRJMOD}/libs/GD25Q128.pretty") (options "") (descr ""))
+	(lib (name "MotorJST") (type "KiCad") (uri "${KIPRJMOD}/libs/MotorJST.pretty") (options "") (descr ""))
 )

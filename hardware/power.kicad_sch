@@ -1325,6 +1325,12 @@
 		(uuid "934aebf7-803d-4140-98c4-c66b1c3ba523")
 	)
 	(junction
+		(at 170.18 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0678586a-b9ad-4fad-bda1-657f2021f19c")
+	)
+	(junction
 		(at 129.54 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1361,12 +1367,6 @@
 		(uuid "41a1f217-76f4-4504-9bb9-440f5f019c54")
 	)
 	(junction
-		(at 171.45 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66384faf-bd6c-4c58-a6cc-ff22aec245e8")
-	)
-	(junction
 		(at 107.95 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1401,12 +1401,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6df3eb0-8e69-414d-93da-19864b8a90e0")
-	)
-	(junction
-		(at 171.45 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd96b89c-5e46-48c0-8cc2-81bd51c44c39")
 	)
 	(junction
 		(at 173.99 82.55)
@@ -1488,6 +1482,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 85.09) (xy 154.94 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c98c5dc-3a45-4ccd-affe-e6048537224e")
+	)
+	(wire
+		(pts
 			(xy 107.95 104.14) (xy 107.95 105.41)
 		)
 		(stroke
@@ -1508,7 +1512,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 82.55) (xy 173.99 82.55)
+			(xy 151.13 82.55) (xy 173.99 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1558,16 +1562,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 82.55) (xy 171.45 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "764ffb0b-7ae7-4862-9861-6919ad7ade6b")
-	)
-	(wire
-		(pts
 			(xy 104.14 105.41) (xy 107.95 105.41)
 		)
 		(stroke
@@ -1578,7 +1572,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 90.17) (xy 173.99 90.17)
+			(xy 166.37 90.17) (xy 170.18 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1605,6 +1599,16 @@
 			(type default)
 		)
 		(uuid "8056e0d4-735a-499a-a1cc-259426528db3")
+	)
+	(wire
+		(pts
+			(xy 170.18 90.17) (xy 173.99 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8165027b-246b-4975-bb61-dec865343604")
 	)
 	(wire
 		(pts
@@ -1698,6 +1702,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 85.09) (xy 170.18 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4171d58-e204-4bde-a540-681b9d84c92c")
+	)
+	(wire
+		(pts
 			(xy 104.14 91.44) (xy 104.14 105.41)
 		)
 		(stroke
@@ -1705,6 +1719,16 @@
 			(type default)
 		)
 		(uuid "ac87e661-9a66-44e8-bcf0-10ced8dc6100")
+	)
+	(wire
+		(pts
+			(xy 154.94 85.09) (xy 154.94 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aec61b89-910d-4451-b2d8-b90e11caeb9f")
 	)
 	(wire
 		(pts
@@ -1735,6 +1759,16 @@
 			(type default)
 		)
 		(uuid "c2c2bd6d-6be3-4872-93fd-ee61c0f3275c")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 170.18 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c60c21c7-bd28-489a-bedd-fc6800371ea8")
 	)
 	(wire
 		(pts
@@ -1795,6 +1829,26 @@
 			(type default)
 		)
 		(uuid "f4d08753-eeec-45d2-b72b-48aa5dbb921c")
+	)
+	(label "FB"
+		(at 152.4 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04c63fbc-226b-4ea8-a2e1-1d43b64ef912")
+	)
+	(label "NRSS"
+		(at 130.81 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c15cb4ac-80f7-4932-97f7-bb124c02d992")
 	)
 	(hierarchical_label "BAT_SENSE"
 		(shape output)
@@ -2447,8 +2501,8 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 86.36 0)
-		(mirror y)
+		(at 162.56 85.09 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2456,9 +2510,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "850273f2-2b9d-447c-978b-02dc9dab1367")
+		(uuid "93a104ee-bbd1-43f9-a3bb-2c3e72328abe")
 		(property "Reference" "C16"
-			(at 170.688 84.328 0)
+			(at 161.036 86.614 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2469,7 +2523,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 170.942 88.9 0)
+			(at 168.148 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2480,7 +2534,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 170.4848 90.17 0)
+			(at 166.37 86.0552 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2491,7 +2545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 86.36 0)
+			(at 162.56 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2502,7 +2556,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 171.45 86.36 0)
+			(at 162.56 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2513,10 +2567,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "387a8676-d62b-4fd2-8f5e-225ac0b11d80")
+			(uuid "571fb974-3c5b-4b9b-9280-58c95eb212f7")
 		)
 		(pin "2"
-			(uuid "7aeb62e3-c57d-44f5-ba0f-a715a6e1053a")
+			(uuid "6b3f94d1-268c-4912-a027-3c303279827a")
 		)
 		(instances
 			(project "swarm_drone"
@@ -2875,7 +2929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Texas_S-PDSO-N10_EP1.2x2mm"
+		(property "Footprint" "Package_DFN_QFN:Texas_S-PDSO-N10_EP1.2x2mm_ThermalVias"
 			(at 140.97 91.44 0)
 			(hide yes)
 			(show_name no)

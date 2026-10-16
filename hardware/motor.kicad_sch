@@ -1633,7 +1633,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "MotorJST:JST_S2B-ZR-3.4_LF__SN_"
 			(at 130.81 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -1783,7 +1783,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "D_Schottky (C22452)"
 			(at 192.024 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1793,7 +1793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 185.42 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -1862,8 +1862,8 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 134.874 58.42 90)
+		(property "Value" "D_Schottky (C22452)"
+			(at 134.874 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1872,7 +1872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 128.27 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2040,7 +2040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "MotorJST:JST_S2B-ZR-3.4_LF__SN_"
 			(at 156.21 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2256,7 +2256,7 @@
 		(dnp no)
 		(uuid "44ed2780-e0a9-4611-99cc-bc724614c344")
 		(property "Reference" "D1"
-			(at 103.378 60.198 90)
+			(at 104.394 61.214 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2265,8 +2265,8 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 106.934 58.42 90)
+		(property "Value" "D_Schottky (C22452)"
+			(at 105.156 60.706 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2275,7 +2275,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 100.33 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2515,7 +2515,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "MotorJST:JST_S2B-ZR-3.4_LF__SN_"
 			(at 187.96 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2584,8 +2584,8 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 162.814 58.42 90)
+		(property "Value" "D_Schottky (C22452)"
+			(at 162.814 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2594,7 +2594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MicroSMP_LargeCathode"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 156.21 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3485,7 +3485,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "MotorJST:JST_S2B-ZR-3.4_LF__SN_"
 			(at 100.33 48.26 0)
 			(hide yes)
 			(show_name no)
