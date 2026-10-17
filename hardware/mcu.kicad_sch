@@ -5157,17 +5157,6 @@
 		)
 		(uuid "0342ff03-9656-4c04-bac4-659722052432")
 	)
-	(hierarchical_label "BARO_CS"
-		(shape output)
-		(at 167.64 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0560171d-6bdf-4229-b8bf-67d8f59a1dcf")
-	)
 	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
 		(at 201.93 106.68 0)
@@ -5277,6 +5266,28 @@
 			(justify left)
 		)
 		(uuid "63630fe1-0ac9-494c-80ac-74954298c1c1")
+	)
+	(hierarchical_label "BARO_INT"
+		(shape input)
+		(at 167.64 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66e648f5-bfbf-44f9-918e-f72c62c85405")
+	)
+	(hierarchical_label "BARO_CS"
+		(shape output)
+		(at 167.64 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6dbe427c-5130-44bb-98ec-52f764b4fc4a")
 	)
 	(hierarchical_label "RADIO_ALT_CS"
 		(shape output)
@@ -5420,17 +5431,6 @@
 			(justify left)
 		)
 		(uuid "e784f692-268e-4841-bcb0-5812f800b136")
-	)
-	(hierarchical_label "BARO_INT"
-		(shape input)
-		(at 167.64 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed224a41-0e6c-4557-88e3-0b309d246c37")
 	)
 	(hierarchical_label "M3"
 		(shape output)
