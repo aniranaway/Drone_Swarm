@@ -5,7 +5,131 @@
 	(uuid "3a60ba80-6c79-4a64-bdfd-12960f1d2492")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Jumper:Jumper_2_Open"
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -18,18 +142,19 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Jumper_2_Open"
-				(at 0 -2.286 0)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -60,7 +185,7 @@
 					)
 				)
 			)
-			(property "Description" "Jumper, 2-pole, open"
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -71,7 +196,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Jumper SPST"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -82,21 +207,11 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
 					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -105,9 +220,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -116,12 +232,10 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Jumper_2_Open_0_1"
-				(arc
-					(start -1.524 1.27)
-					(mid 0 1.778)
-					(end 1.524 1.27)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -131,11 +245,11 @@
 					)
 				)
 			)
-			(symbol "Jumper_2_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -150,17 +264,114 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -203,16 +414,22 @@
 		(uuid "0b823583-915c-421c-b634-330315a67b5a")
 	)
 	(junction
+		(at 180.34 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c313c29-a5f6-4232-b309-5f1f69b687fe")
+	)
+	(junction
 		(at 200.66 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "544abacd-db8c-401b-85d3-dc607c7a62ea")
 	)
 	(junction
-		(at 135.89 53.34)
+		(at 185.42 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "892047f1-d6be-43a1-9ef6-0683d9c79fdf")
+		(uuid "7b6ce70f-aca8-4e57-9093-132215194e04")
 	)
 	(junction
 		(at 195.58 58.42)
@@ -227,10 +444,10 @@
 		(uuid "99f767e7-d09f-4dfc-bd9d-a403b01f6e5d")
 	)
 	(junction
-		(at 140.97 58.42)
+		(at 182.88 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c3e14f76-d452-4b2b-8156-0af5be32cd5e")
+		(uuid "a6b3987e-268c-47b0-819f-27899b910d3c")
 	)
 	(junction
 		(at 187.96 115.57)
@@ -243,36 +460,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4fdd170-7da1-4c77-bbbe-22c13a8b6d8f")
-	)
-	(junction
-		(at 138.43 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "def0e705-bba4-4613-ad79-86263b7be22d")
-	)
-	(no_connect
-		(at 138.43 40.64)
-		(uuid "2f4e2024-71fc-401f-aba8-51dceb9d933a")
-	)
-	(no_connect
-		(at 143.51 39.37)
-		(uuid "69a274d6-43e3-480e-a17d-53c4551b0bc6")
-	)
-	(no_connect
-		(at 135.89 40.64)
-		(uuid "6fbc79e4-b59e-430b-84e5-669d7927d70e")
-	)
-	(no_connect
-		(at 140.97 40.64)
-		(uuid "7f5eb2e0-1859-43d6-8980-eb5715ebba1f")
-	)
-	(no_connect
-		(at 146.05 39.37)
-		(uuid "805182f4-04ff-4618-9d4e-3903edbfd7bd")
-	)
-	(no_connect
-		(at 148.59 39.37)
-		(uuid "88df2fd1-34aa-4050-83db-ae40fafe1051")
 	)
 	(wire
 		(pts
@@ -336,7 +523,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 62.23) (xy 143.51 49.53)
+			(xy 143.51 62.23) (xy 143.51 50.8)
 		)
 		(stroke
 			(width 0)
@@ -373,16 +560,6 @@
 			(type default)
 		)
 		(uuid "2b61aa68-4fce-456e-ae95-e69a63da5356")
-	)
-	(wire
-		(pts
-			(xy 140.97 58.42) (xy 140.97 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f3e1452-313c-445b-b640-7f87804360bc")
 	)
 	(wire
 		(pts
@@ -486,7 +663,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 62.23) (xy 148.59 49.53)
+			(xy 148.59 62.23) (xy 148.59 50.8)
 		)
 		(stroke
 			(width 0)
@@ -523,16 +700,6 @@
 			(type default)
 		)
 		(uuid "662a293c-eb27-4f25-9508-ff7b2aca1e98")
-	)
-	(wire
-		(pts
-			(xy 138.43 55.88) (xy 138.43 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67382117-2790-416c-af77-7b23e9385d08")
 	)
 	(wire
 		(pts
@@ -576,7 +743,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 62.23) (xy 146.05 49.53)
+			(xy 146.05 62.23) (xy 146.05 50.8)
 		)
 		(stroke
 			(width 0)
@@ -946,16 +1113,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 50.8) (xy 135.89 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e37ba2b8-d88b-4447-88e3-60b5cbf72df9")
-	)
-	(wire
-		(pts
 			(xy 138.43 62.23) (xy 138.43 55.88)
 		)
 		(stroke
@@ -1005,8 +1162,8 @@
 		(uuid "fe0109b2-37ce-4a1a-b92e-b1f54d933920")
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 143.51 44.45 90)
+		(lib_id "power:+3V3")
+		(at 128.27 50.8 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1014,31 +1171,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0ebf8021-f208-45e8-bcaa-375d4c0f1c29")
-		(property "Reference" "JP4"
-			(at 141.732 39.37 90)
+		(fields_autoplaced yes)
+		(uuid "148bdae4-05f8-4349-85df-b1bc5e58cfab")
+		(property "Reference" "#PWR03"
+			(at 128.27 46.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 141.732 44.196 90)
+		(property "Value" "+3V3"
+			(at 128.27 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 143.51 44.45 0)
+		(property "Footprint" ""
+			(at 128.27 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1049,7 +1206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 44.45 0)
+			(at 128.27 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1059,8 +1216,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 143.51 44.45 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 128.27 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1069,25 +1226,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "067ad2e6-82b8-4e19-abfc-b788b89b8c2e")
 		)
 		(pin "1"
-			(uuid "6c1c7d01-7612-4106-80ef-4c8bfbffa688")
+			(uuid "2ee2ab00-d8d9-4bae-aaee-b335604d20e3")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP4")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 138.43 45.72 90)
+		(lib_id "Connector:TestPoint")
+		(at 180.34 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1095,31 +1249,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2330c7ca-9d8a-4dfe-b44b-7802b7680ac6")
-		(property "Reference" "JP2"
-			(at 136.398 40.64 90)
+		(uuid "26b32024-6311-4457-a2eb-48f373c4abde")
+		(property "Reference" "TP1"
+			(at 179.07 80.772 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 136.398 34.798 90)
+		(property "Value" "MISO"
+			(at 175.006 76.708 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 138.43 45.72 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 185.42 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1130,7 +1284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 45.72 0)
+			(at 185.42 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1140,8 +1294,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 138.43 45.72 0)
+		(property "Description" "test point"
+			(at 180.34 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1150,25 +1304,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "dee8261a-9630-4b4e-93b5-6eeee9d60fb8")
 		)
 		(pin "1"
-			(uuid "0c6c2d45-def2-4ca9-adf0-031f9970666e")
+			(uuid "83f76444-5bd8-49dc-86da-4b6d58c51624")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 140.97 45.72 90)
+		(lib_id "Connector:TestPoint")
+		(at 128.27 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1176,31 +1327,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2f8e078c-a367-47bc-9534-7a428ee4ef2a")
-		(property "Reference" "JP3"
-			(at 138.938 42.418 90)
+		(uuid "2f9d95f7-869e-4524-b1da-57d2ccc1a64d")
+		(property "Reference" "TP7"
+			(at 126.746 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 139.192 46.228 90)
+		(property "Value" "+3v3"
+			(at 122.174 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 140.97 45.72 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 133.35 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1211,7 +1362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 45.72 0)
+			(at 133.35 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1221,8 +1372,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 140.97 45.72 0)
+		(property "Description" "test point"
+			(at 128.27 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1231,25 +1382,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "1c427dc8-1a27-47d1-a5e4-4e35ec5cf910")
 		)
 		(pin "1"
-			(uuid "67a80299-1ba9-4b4d-875d-4a45461e849d")
+			(uuid "49eebf0a-7d82-46fb-928f-518f11853f9b")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP3")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 148.59 44.45 90)
+		(lib_id "Connector:TestPoint")
+		(at 185.42 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1257,31 +1405,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8591ab01-78c1-48fc-9e9b-67fca4b043be")
-		(property "Reference" "JP6"
-			(at 147.574 39.624 90)
+		(uuid "34c80f95-dcfc-4064-99fe-10591bf7e81a")
+		(property "Reference" "TP3"
+			(at 184.15 88.9291 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 147.066 43.942 90)
+		(property "Value" "SCK"
+			(at 184.912 81.8171 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 148.59 44.45 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1292,7 +1440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 44.45 0)
+			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1302,8 +1450,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 148.59 44.45 0)
+		(property "Description" "test point"
+			(at 185.42 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1312,25 +1460,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "7c58bf27-8cbd-4d4c-b553-886c26a96367")
 		)
 		(pin "1"
-			(uuid "466e92a8-e590-4670-86ad-031f8a998bd6")
+			(uuid "bd792ded-7b6a-41c8-aa6c-13222f855328")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP6")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 146.05 44.45 90)
+		(lib_id "Connector:TestPoint")
+		(at 148.59 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1338,31 +1483,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "905f3492-6a0d-4d2a-afa6-3ea651c47c1c")
-		(property "Reference" "JP5"
-			(at 144.526 41.148 90)
+		(uuid "501d5b3f-5456-4eee-9b06-26a5a04d97ec")
+		(property "Reference" "TP6"
+			(at 148.59 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 144.526 44.958 90)
+		(property "Value" "INT"
+			(at 151.13 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 146.05 44.45 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 153.67 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1373,7 +1518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 44.45 0)
+			(at 153.67 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1383,8 +1528,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 146.05 44.45 0)
+		(property "Description" "test point"
+			(at 148.59 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1393,25 +1538,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "49ec8333-8e37-486e-98e3-b4744680cb5c")
 		)
 		(pin "1"
-			(uuid "0d905495-272d-4ccf-aa05-ec8201daead7")
+			(uuid "fc04ffce-b34e-4aba-9567-41851d11131e")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP5")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 135.89 45.72 90)
+		(lib_id "Connector:TestPoint")
+		(at 146.05 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1419,31 +1561,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c5d9b935-e442-4ca2-9633-a24a9c9c503e")
-		(property "Reference" "JP1"
-			(at 132.334 42.418 90)
+		(uuid "658e9bd1-acf2-4ade-bb68-043b0fb4ef14")
+		(property "Reference" "TP5"
+			(at 145.034 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 133.858 46.228 90)
+		(property "Value" "CS"
+			(at 147.828 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.254 0.254)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 135.89 45.72 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 151.13 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1454,7 +1596,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 45.72 0)
+			(at 151.13 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1464,8 +1606,8 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 135.89 45.72 0)
+		(property "Description" "test point"
+			(at 146.05 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1474,17 +1616,326 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "b2169e9e-1974-4e35-ba34-eef5d042bc4e")
 		)
 		(pin "1"
-			(uuid "cd0ed1cd-e08a-464e-998f-50497e0ee28f")
+			(uuid "822fb6e8-a1a3-4880-a050-9a2b0afdeea2")
 		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
-					(reference "JP1")
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 132.08 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b018d5d3-13c6-4430-8d57-3521dc0db6b7")
+		(property "Reference" "TP8"
+			(at 130.556 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 126.746 43.688 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 137.16 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1baf6c17-d89f-41ae-9204-981766381a3f")
+		)
+		(instances
+			(project "swarm_drone"
+				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb59cca8-a0b0-4fcd-ad2d-ff42ed89a037")
+		(property "Reference" "#PWR028"
+			(at 132.08 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d0b88ad-09be-4d1e-beda-b41c9d2bc431")
+		)
+		(instances
+			(project "swarm_drone"
+				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3b18c72-a84a-4217-ade9-3be40c27c9a9")
+		(property "Reference" "TP2"
+			(at 182.118 87.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOSI"
+			(at 179.832 79.248 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 187.96 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 182.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89dad514-0fe9-47eb-893d-6cbf08c36772")
+		)
+		(instances
+			(project "swarm_drone"
+				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 143.51 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4cb8dab-bf2f-4d77-af2e-a31cab924316")
+		(property "Reference" "TP4"
+			(at 141.732 53.086 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CE"
+			(at 144.78 43.688 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 148.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 143.51 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08476173-1208-4e32-9b38-fa9e948079ed")
+		)
+		(instances
+			(project "swarm_drone"
+				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
