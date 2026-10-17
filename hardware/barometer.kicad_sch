@@ -978,7 +978,7 @@
 		)
 		(uuid "ec600904-2266-4849-b386-802eae71d0d9")
 	)
-	(hierarchical_label "SPI2_MOSI"
+	(hierarchical_label "SPI3_MOSI"
 		(shape input)
 		(at 123.19 92.71 180)
 		(effects
@@ -1000,7 +1000,7 @@
 		)
 		(uuid "95a8d67f-f764-4562-b5c6-9ed361ff88d4")
 	)
-	(hierarchical_label "SPI2_MISO"
+	(hierarchical_label "SPI3_MISO"
 		(shape output)
 		(at 123.19 95.25 180)
 		(effects
@@ -1022,7 +1022,7 @@
 		)
 		(uuid "b88a2cb7-ad71-4799-8f42-6bbf1a2d11d2")
 	)
-	(hierarchical_label "SPI2_SCK"
+	(hierarchical_label "SPI3_SCK"
 		(shape input)
 		(at 123.19 87.63 180)
 		(effects

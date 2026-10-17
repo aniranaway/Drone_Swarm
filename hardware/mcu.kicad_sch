@@ -3685,10 +3685,6 @@
 		(uuid "f53c6a55-c87a-48d5-8e95-8792108ae3de")
 	)
 	(no_connect
-		(at 167.64 58.42)
-		(uuid "07117dc4-f032-4183-8613-f41e0f0cc74b")
-	)
-	(no_connect
 		(at 167.64 93.98)
 		(uuid "0fb24784-7c43-49cc-a2ed-ba3fc91e1620")
 	)
@@ -3701,12 +3697,16 @@
 		(uuid "4b4a416a-fe68-48a4-aca5-dc92ea83d1e9")
 	)
 	(no_connect
-		(at 167.64 119.38)
-		(uuid "9dea68f9-2c1f-4413-95a6-8db0824e614a")
+		(at 127 73.66)
+		(uuid "841e1fa9-5c17-438b-86aa-651020f250b6")
 	)
 	(no_connect
-		(at 167.64 55.88)
-		(uuid "9f71c96e-ad0f-4935-a1ac-d00d3f78fb58")
+		(at 127 71.12)
+		(uuid "8a6dc89c-bb69-4f4c-8e95-19f0bf21ba70")
+	)
+	(no_connect
+		(at 167.64 119.38)
+		(uuid "9dea68f9-2c1f-4413-95a6-8db0824e614a")
 	)
 	(no_connect
 		(at 167.64 53.34)
@@ -4588,16 +4588,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 71.12) (xy 127 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af86f799-fa9d-4880-a42d-66c85d7076f5")
-	)
-	(wire
-		(pts
 			(xy 81.28 69.85) (xy 81.28 81.28)
 		)
 		(stroke
@@ -4978,16 +4968,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 73.66) (xy 127 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa263aa1-9276-43f7-b917-d31ada65e060")
-	)
-	(wire
-		(pts
 			(xy 142.24 27.94) (xy 142.24 39.37)
 		)
 		(stroke
@@ -5189,12 +5169,12 @@
 	)
 	(hierarchical_label "BARO_CS"
 		(shape output)
-		(at 123.19 73.66 180)
+		(at 167.64 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "0560171d-6bdf-4229-b8bf-67d8f59a1dcf")
 	)
@@ -5255,14 +5235,14 @@
 	)
 	(hierarchical_label "IMU_CS"
 		(shape output)
-		(at 167.64 76.2 0)
+		(at 167.64 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2c828a23-d4a9-488a-a08f-397668d3a887")
+		(uuid "22b0b3c2-99ad-4b90-95d5-c23aa83841ee")
 	)
 	(hierarchical_label "SPI1_MISO"
 		(shape input)
@@ -5318,6 +5298,17 @@
 			(justify left)
 		)
 		(uuid "5d4980b1-02bd-44d0-95b4-694f4e708e41")
+	)
+	(hierarchical_label "IMU_INT"
+		(shape input)
+		(at 167.64 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "63630fe1-0ac9-494c-80ac-74954298c1c1")
 	)
 	(hierarchical_label "UWB_CS"
 		(shape output)
@@ -5440,7 +5431,7 @@
 		)
 		(uuid "e784f692-268e-4841-bcb0-5812f800b136")
 	)
-	(hierarchical_label "IMU_INT"
+	(hierarchical_label "BARO_INT"
 		(shape input)
 		(at 167.64 78.74 0)
 		(effects
@@ -5448,17 +5439,6 @@
 				(size 1.27 1.27)
 			)
 			(justify left)
-		)
-		(uuid "e81b7793-f74c-4634-adf6-df1e1a615967")
-	)
-	(hierarchical_label "BARO_INT"
-		(shape input)
-		(at 123.19 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
 		)
 		(uuid "ed224a41-0e6c-4557-88e3-0b309d246c37")
 	)
