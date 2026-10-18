@@ -5179,17 +5179,6 @@
 		)
 		(uuid "0b10c651-dca1-4a47-b18a-f7bb4570e608")
 	)
-	(hierarchical_label "RADIO_INT"
-		(shape input)
-		(at 167.64 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0b99c2c1-eedc-4d7c-a446-158f6310af91")
-	)
 	(hierarchical_label "SPI2_MISO"
 		(shape input)
 		(at 124.46 76.2 180)
@@ -5300,6 +5289,17 @@
 		)
 		(uuid "744f1772-f644-4bb7-8693-68ee74b8dd3a")
 	)
+	(hierarchical_label "RADIO_CS"
+		(shape output)
+		(at 167.64 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "76fcd8a3-8b99-45bb-bacc-3bf92eac914e")
+	)
 	(hierarchical_label "UWB_CS"
 		(shape output)
 		(at 121.92 83.82 180)
@@ -5399,8 +5399,8 @@
 		)
 		(uuid "c87e15d5-a1f8-4a1c-b24c-f3d964967605")
 	)
-	(hierarchical_label "RADIO_CS"
-		(shape output)
+	(hierarchical_label "RADIO_INT"
+		(shape input)
 		(at 127 66.04 180)
 		(effects
 			(font
@@ -5408,7 +5408,7 @@
 			)
 			(justify right)
 		)
-		(uuid "d434a40d-1350-4e3f-b905-103c89fc60d3")
+		(uuid "cebf0e86-01c0-4edd-8446-8694c04f4aad")
 	)
 	(hierarchical_label "RADIO_CE"
 		(shape output)
