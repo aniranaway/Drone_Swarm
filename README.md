@@ -30,10 +30,10 @@ This project follows a structured hardware-software co-design lifecycle, progres
 - [X] **Phase 1: Requirements & Component Selection** *(Completed)*  
   Establish System Requirements Documents (SRD), execute trade studies for core components (MCU, IMU, UWB, Power), and calculate mass/power budgets.
 
-- [ ] **Phase 2: Schematic Capture & Circuit Design**  (In Progress)
+- [X] **Phase 2: Schematic Capture & Circuit Design**  *(Completed)* 
   Design power regulation, coreless motor MOSFET drive arrays, RF layout rules for radio, SWD interfaces, sensor layouts, and dedicated test pads.
 
-- [ ] **Phase 3: PCB Layout, Manufacturing & Board Bring-Up**  
+- [ ] **Phase 3: PCB Layout, Manufacturing & Board Bring-Up**  (In Progress)
   Perform 4-layer PCB layout with impedance matching, manage fabrication/assembly, and execute board bring-up (power rail verification, current draw checks, and SWD flashing).
 
 - [ ] **Phase 4: Low-Level Drivers & Telemetry Baseline**  
