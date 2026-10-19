@@ -5,4 +5,5 @@
 	(lib (name "2026-10-13_21-16-43") (type "KiCad") (uri "${KIPRJMOD}/libs/2026-10-13_21-16-43.kicad_sym") (options "") (descr ""))
 	(lib (name "GD25Q128") (type "KiCad") (uri "${KIPRJMOD}/libs/GD25Q128.kicad_sym") (options "") (descr ""))
 	(lib (name "S2B-ZR-3.4_LF__SN_") (type "KiCad") (uri "${KIPRJMOD}/libs/S2B-ZR-3.4_LF__SN_.kicad_sym") (options "") (descr ""))
+	(lib (name "ANT016008LCS2442MA1") (type "KiCad") (uri "${KIPRJMOD}/libs/ANT016008LCS2442MA1.kicad_sym") (options "") (descr ""))
 )
