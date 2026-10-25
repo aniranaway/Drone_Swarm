@@ -683,6 +683,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 142.24) (xy 93.98 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d72034-15ca-4e54-8870-65bdc1a2c79a")
+	)
+	(wire
+		(pts
 			(xy 187.96 115.57) (xy 187.96 146.05)
 		)
 		(stroke
@@ -1003,6 +1013,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 142.24) (xy 93.98 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e52b9b-fb5f-40c0-96ec-fe1756bb404f")
+	)
+	(wire
+		(pts
 			(xy 151.13 45.72) (xy 208.28 45.72)
 		)
 		(stroke
@@ -1060,6 +1080,16 @@
 			(type default)
 		)
 		(uuid "d7c3792f-863d-463f-81f4-bcecb1826c24")
+	)
+	(wire
+		(pts
+			(xy 93.98 104.14) (xy 120.65 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da13c092-4f51-4958-b4de-f725e02817cd")
 	)
 	(wire
 		(pts
@@ -1248,7 +1278,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "26b32024-6311-4457-a2eb-48f373c4abde")
 		(property "Reference" "TP1"
 			(at 179.07 80.772 0)
@@ -1305,6 +1335,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 180.34 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 180.34 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 180.34 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "83f76444-5bd8-49dc-86da-4b6d58c51624")
 		)
@@ -1326,7 +1389,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2f9d95f7-869e-4524-b1da-57d2ccc1a64d")
 		(property "Reference" "TP7"
 			(at 126.746 52.07 0)
@@ -1383,6 +1446,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 128.27 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 128.27 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 128.27 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "49eebf0a-7d82-46fb-928f-518f11853f9b")
 		)
@@ -1404,7 +1500,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "34c80f95-dcfc-4064-99fe-10591bf7e81a")
 		(property "Reference" "TP3"
 			(at 184.15 88.9291 0)
@@ -1461,6 +1557,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 185.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 185.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 185.42 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bd792ded-7b6a-41c8-aa6c-13222f855328")
 		)
@@ -1482,7 +1611,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "501d5b3f-5456-4eee-9b06-26a5a04d97ec")
 		(property "Reference" "TP6"
 			(at 148.59 52.07 0)
@@ -1539,6 +1668,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 148.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 148.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 148.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fc04ffce-b34e-4aba-9567-41851d11131e")
 		)
@@ -1560,7 +1722,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "658e9bd1-acf2-4ade-bb68-043b0fb4ef14")
 		(property "Reference" "TP5"
 			(at 145.034 52.07 0)
@@ -1617,6 +1779,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "822fb6e8-a1a3-4880-a050-9a2b0afdeea2")
 		)
@@ -1638,7 +1833,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b018d5d3-13c6-4430-8d57-3521dc0db6b7")
 		(property "Reference" "TP8"
 			(at 130.556 52.07 0)
@@ -1685,6 +1880,39 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 132.08 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1794,7 +2022,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f3b18c72-a84a-4217-ade9-3be40c27c9a9")
 		(property "Reference" "TP2"
 			(at 182.118 87.884 0)
@@ -1851,6 +2079,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 182.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 182.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 182.88 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "89dad514-0fe9-47eb-893d-6cbf08c36772")
 		)
@@ -1872,7 +2133,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f4cb8dab-bf2f-4d77-af2e-a31cab924316")
 		(property "Reference" "TP4"
 			(at 141.732 53.086 0)
@@ -1919,6 +2180,39 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 143.51 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 143.51 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 143.51 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 143.51 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2315,7 +2609,7 @@
 				(justify left)
 			)
 		)
-		(pin "VL53L1X_INT" input
+		(pin "VL53L1X_INT" output
 			(at 120.65 106.68 180)
 			(uuid "864ab545-a027-4b40-8733-56bab6c1cef4")
 			(effects
@@ -2455,6 +2749,16 @@
 				(justify right)
 			)
 		)
+		(pin "VL53L1X_XSHUT" output
+			(at 120.65 104.14 180)
+			(uuid "a6dda02a-89d0-4621-8236-245838e492f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "swarm_drone"
 				(path "/3a60ba80-6c79-4a64-bdfd-12960f1d2492"
@@ -2525,6 +2829,16 @@
 		(pin "VL53L1X_INT" output
 			(at 88.9 144.78 0)
 			(uuid "fd0aa63a-4776-4851-a758-09c1958b93b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VL53L1X_XSHUT" input
+			(at 88.9 142.24 0)
+			(uuid "05f07113-c7c1-443b-ab95-b3312e6385ae")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -81,7 +81,44 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|107825000|84665463|0b2fa05b-e22f-436f-93d4-d81777107384|b809b262-7277-4146-acc9-d1c513b12f91",
+          ""
+        ],
+        [
+          "silk_edge_clearance|108642346|84665463|0b2fa05b-e22f-436f-93d4-d81777107384|84d3529e-227f-4701-9500-a85774f462e0",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78325000|59832809|7306d4a4-49ed-48c0-96d9-84b220e129de|d1dc8527-def7-4f9b-82ac-e3aebf1565a3",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78325000|63432809|7306d4a4-49ed-48c0-96d9-84b220e129de|cc3e11e7-1e7e-4be3-a2a4-cdbbf98db3d2",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78336169|58072809|7306d4a4-49ed-48c0-96d9-84b220e129de|da22cf50-9736-4c02-a37d-18e1dec9cde3",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78336169|60632809|7306d4a4-49ed-48c0-96d9-84b220e129de|d8a5db5a-f3de-4a56-bfb5-643a156dbea4",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78336169|61632809|7306d4a4-49ed-48c0-96d9-84b220e129de|3576375c-3c57-4ff2-9385-365ce31975c5",
+          ""
+        ],
+        [
+          "silk_edge_clearance|78336169|64192809|7306d4a4-49ed-48c0-96d9-84b220e129de|8e2eae33-68c2-4dc8-a6eb-13e7eb87ecde",
+          ""
+        ],
+        [
+          "silk_edge_clearance|94325000|84665463|0b2fa05b-e22f-436f-93d4-d81777107384|0ebc74f1-c46c-4198-bbe5-ba62cc6e60bb",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -222,6 +259,7 @@
         0.3,
         0.36,
         0.5,
+        2.0,
         2.5
       ],
       "tuning_pattern_settings": {
@@ -830,6 +868,12 @@
           "show": true
         },
         {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
@@ -870,12 +914,114 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -920,7 +1066,7 @@
         "uuid": "3a60ba80-6c79-4a64-bdfd-12960f1d2492"
       }
     ],
-    "used_designators": "#FLG1-3,#PWR1-61,ANT1,C1-37,D1-10,DWM1,FB1,J1-8,JP1-7,L1-3,Q1-4,R1-27,SW1,TP1-8,U1-8,X1,Y1",
+    "used_designators": "#FLG1-3,#PWR1-62,ANT1,C1-38,D1-10,DWM1,FB1,J1-9,JP1-7,L1-3,Q1-4,R1-27,SW1,TP1-8,U1-8,X1,Y1",
     "variants": []
   },
   "sheets": [

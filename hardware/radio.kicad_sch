@@ -1757,6 +1757,12 @@
 		(uuid "0b9bba11-9dcb-4cc0-9e60-c12614d1ba1c")
 	)
 	(junction
+		(at 163.83 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cc3d97c-06c9-4d1f-a27c-3a25bc182159")
+	)
+	(junction
 		(at 132.08 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1853,12 +1859,6 @@
 		(uuid "d5fc56ca-5b3e-4108-a824-1e0bb03691b8")
 	)
 	(junction
-		(at 175.26 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e956f34b-93a0-4478-b060-8e2261bddb56")
-	)
-	(junction
 		(at 175.26 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1933,6 +1933,16 @@
 			(type default)
 		)
 		(uuid "21663345-52a4-4d01-aa6d-f10bd80eaba7")
+	)
+	(wire
+		(pts
+			(xy 163.83 66.04) (xy 163.83 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b92e73-1cb9-42bb-9c09-75c5a0312331")
 	)
 	(wire
 		(pts
@@ -2063,6 +2073,16 @@
 			(type default)
 		)
 		(uuid "5d68d8a6-13aa-43b4-866b-c0f4f33de363")
+	)
+	(wire
+		(pts
+			(xy 163.83 58.42) (xy 175.26 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64dc7ea9-c5aa-4582-80fd-3f263777bf38")
 	)
 	(wire
 		(pts
@@ -2256,7 +2276,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 58.42) (xy 175.26 58.42)
+			(xy 149.86 58.42) (xy 163.83 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2423,16 +2443,6 @@
 			(type default)
 		)
 		(uuid "f6e30180-3c0e-4a5c-9524-09287d186b47")
-	)
-	(wire
-		(pts
-			(xy 163.83 66.04) (xy 175.26 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa6d04af-712c-41f9-a7c6-2a6163456313")
 	)
 	(label "ANT1"
 		(at 147.32 66.04 0)
@@ -2616,6 +2626,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 181.61 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 181.61 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 181.61 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4a38c60e-0013-4375-ad3a-b2e3aeefb48c")
 		)
@@ -2697,6 +2740,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 181.61 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 181.61 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 181.61 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1551cc5a-907a-4a21-92ec-0c8fc3b6272b")
 		)
@@ -2767,6 +2843,39 @@
 		)
 		(property "Description" "Inductor"
 			(at 160.02 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 160.02 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 160.02 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 160.02 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2858,6 +2967,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 121.92 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 121.92 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 121.92 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "127c02ff-1fea-4396-add7-d9f7ca12e20b")
 		)
@@ -2929,6 +3071,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 175.26 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 175.26 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 175.26 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 175.26 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3020,6 +3195,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25768"
+			(at 100.33 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 100.33 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 100.33 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3224db39-72f4-4999-8ef6-12dc795e205c")
 		)
@@ -3092,6 +3300,39 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 171.45 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 171.45 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 171.45 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 171.45 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3310,6 +3551,39 @@
 				(justify bottom)
 			)
 		)
+		(property "LCSC" "C76585"
+			(at 208.28 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 208.28 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 208.28 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "809471ec-d188-4118-a549-d28f53bed6ef")
 		)
@@ -3381,6 +3655,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 165.1 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 165.1 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3463,6 +3770,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 151.13 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 151.13 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 151.13 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 151.13 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3624,6 +3964,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 115.57 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 115.57 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 115.57 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 115.57 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3807,6 +4180,17 @@
 			(at 158.75 118.11 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C13738"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -4056,6 +4440,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 167.64 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 167.64 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 167.64 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "be121d61-4cc2-4bcf-a3af-199fcb4f8026")
 		)
@@ -4204,6 +4621,39 @@
 		)
 		(property "Description" "Inductor"
 			(at 160.02 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 160.02 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 160.02 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 160.02 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4375,6 +4825,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C8791 "
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "12"
 			(uuid "5c398bc8-ba32-4faf-8d1d-81873d57ccdd")
 		)
@@ -4508,6 +4991,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "455b8203-b3ac-48ce-bb84-68e144249c4f")
 		)
@@ -4580,6 +5096,39 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 113.03 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 113.03 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 113.03 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 113.03 99.06 0)
 			(hide yes)
 			(show_name no)

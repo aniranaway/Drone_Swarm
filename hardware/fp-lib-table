@@ -6,4 +6,5 @@
 	(lib (name "GD25Q128") (type "KiCad") (uri "${KIPRJMOD}/libs/GD25Q128.pretty") (options "") (descr ""))
 	(lib (name "MotorJST") (type "KiCad") (uri "${KIPRJMOD}/libs/MotorJST.pretty") (options "") (descr ""))
 	(lib (name "Antenna") (type "KiCad") (uri "${KIPRJMOD}/libs/Antenna.pretty") (options "") (descr ""))
+	(lib (name "header") (type "KiCad") (uri "${KIPRJMOD}/libs/header.pretty") (options "") (descr ""))
 )
